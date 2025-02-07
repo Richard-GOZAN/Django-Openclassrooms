@@ -20,3 +20,18 @@ def hello(request):
 
 def about(request):
     return HttpResponse("<h1>À propos</h1> <p> Nous adorons merch !</p>")
+
+
+def listings(request):
+    return HttpResponse(
+        """
+        <h1>Listings</h1>
+        <p>Voici la liste des annonces.</p>
+        """
+    )
+
+
+def contact(request):
+    return HttpResponse(
+        "<h1>Contact Us</h1> <p>Contactez-nous pour plus d'informations</p>"
+    )
